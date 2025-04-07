@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    /* Styles pour les petits écrans */
+    body {
+        font-size: 14px;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7f6;
@@ -40,6 +51,7 @@ header p {
     font-size: 1.3rem;
     color: #7f8c8d;
 }
+
 .bio, .interests {
     margin: 40px 0;
     padding: 25px;
@@ -155,7 +167,6 @@ ul li:hover {
     transform: scale(1.05); /* Agrandissement du lien moins prononcé */
 }
 
-/* Nouvelle section "Pourquoi Netlify.app" */
 .why-netlify {
     margin-top: 40px;
     padding: 25px;
@@ -174,6 +185,20 @@ ul li:hover {
     font-size: 1.2rem;
     color: #7f8c8d;
     margin-bottom: 20px;
+}
+
+/* Lien Netlify - change la couleur pour qu'elle soit identique à celle du texte dans la section why-netlify */
+.why-netlify a {
+    color: #7f8c8d; /* Couleur du texte identique à celle du texte dans cette section */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet au survol du lien Netlify */
+.why-netlify a:hover {
+    color: #3498db; /* Lors du survol, la couleur devient bleue */
+    text-decoration: underline;
 }
 
 /* Style du pied de page */
@@ -218,9 +243,6 @@ footer hr.footer-separator {
     width: 100%;
     text-align: center;
     margin: 20px 0;
-    /* Retirer la position sticky et le top */
-    /* position: sticky; */
-    /* top: 20px; */
     z-index: 1000;
 }
 
@@ -264,4 +286,77 @@ footer hr.footer-separator {
 .navigation ul li a:focus {
     outline: none; /* Pas de contour visible lorsqu'un lien de navigation a le focus */
     box-shadow: none; /* Pas d'ombre */
+}
+
+/* Nouvelle section "Mes projets" */
+.projects {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.projects h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.projects p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.projects ul {
+    list-style: none;
+}
+
+.projects li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.projects li:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Description dans la section "Mes projets" */
+.projects .description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.projects li:hover .description {
+    color: #fff;
+}
+
+/* Liens dans "Mes projets" */
+.projects a.project-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-right: 15px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Changement de couleur du lien au survol */
+.projects a.project-link:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: scale(1.05);
 }
