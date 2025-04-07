@@ -7,6 +7,8 @@
     <meta name="author" content="Nathan">
     <meta name="robots" content="index, follow">
     <meta name="language" content="fr">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    <meta property="og:type" content="website">
     <title>Nathan - Le Collégien - V2</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
@@ -18,10 +20,11 @@
 
     <nav class="navigation">
         <ul>
-            <li><a href="#bio">À propos</a></li>
-            <li><a href="#interests">Centres d'intérêt</a></li>
-            <li><a href="#websites">Mes sites web</a></li>
-            <li><a href="#why-netlify">Pourquoi netlify.app ?</a></li>
+            <li><a href="#bio" aria-label="En savoir plus sur moi">À propos</a></li>
+            <li><a href="#interests" aria-label="Mes centres d'intérêt">Centres d'intérêt</a></li>
+            <li><a href="#websites" aria-label="Mes sites web">Mes sites web</a></li>
+            <li><a href="#projects" aria-label="Mes projets">Mes projets</a></li>
+            <li><a href="#why-netlify" aria-label="Pourquoi netlify.app ?">Pourquoi Netlify ?</a></li>
         </ul>
     </nav>
 
@@ -48,20 +51,33 @@
             <h2>Mes sites web</h2>
             <ul>
                 <li>
-                    <a href="https://nathan-le-collegien.netlify.app" target="_blank" class="site-link">Nathan, le collégien V1</a>
+                    <a href="https://nathan-le-collegien.netlify.app" target="_blank" class="site-link" aria-label="Voir le site Nathan, le collégien V1">Nathan, le collégien V1</a>
                     <span class="description">Un site que j'ai créé au début de mes 12 ans pour commencer à coder des sites Internet.</span>
                 </li>
                 <li>
-                    <a href="https://athenavaldoise-rapide.netlify.app" target="_blank" class="site-link">Athéna Rapidement</a>
+                    <a href="https://athenavaldoise-rapide.netlify.app" target="_blank" class="site-link" aria-label="Voir le site Athéna Rapidement">Athéna Rapidement</a>
                     <span class="description">Un site que j'ai créé pour accéder à l'Athéna mon collège Val d'Oise rapidement.</span>
                 </li>
                 <li>
-                    <a href="https://la-chanson-alexi.netlify.app" target="_blank" class="site-link">La chanson d'Alexi</a>
-                    <span class="description">Un site que j'ai créé pour un projet nommé ALEXA en companie de mes amis.</span>
+                    <a href="https://la-chanson-alexi.netlify.app" target="_blank" class="site-link" aria-label="Voir le site La chanson d'Alexi">La chanson d'Alexi</a>
+                    <span class="description">Un site que j'ai créé pour un projet nommé ALEXA en compagnie de mes amis.</span>
                 </li>
                 <li>
-                    <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="site-link">Nathan, le collégien V2</a>
+                    <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="site-link" aria-label="Voir le site Nathan, le collégien V2">Nathan, le collégien V2</a>
                     <span class="description">Ce site que j'ai créé pour une autre version du site nommé Nathan, le collégien.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Mes projets</h2>
+            <p>Voici quelques projets en cours :</p>
+            <ul>
+                <li>
+                    <strong>Site</strong> - Ce site Internet est un de mes projets en cours.
+                </li>
+                <li>
+                    <strong>Alexa</strong> - Un projet <strong>privé</strong>.
                 </li>
             </ul>
         </section>
@@ -69,7 +85,10 @@
         <section id="why-netlify" class="why-netlify">
             <h2>Pourquoi "netlify.app" à la fin de mes liens ?</h2>
             <p>
-                Lorsque vous voyez "netlify.app" à la fin des liens vers mes sites, c'est parce que j'ai choisi de commencer avec une option gratuite pour l'hébergement. En effet, je n'ai pas encore payé pour un nom de domaine personnalisé (par exemple, un domaine qui se termine par .com). Cependant, Netlify est un hébergeur très fiable, rapide et facile à utiliser. Vous pouvez l'essayer vous-même grâce à <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" aria-label="Essayez Netlify.">ce lien</a>.
+                Lorsque vous voyez "netlify.app" à la fin des liens vers mes sites, c'est parce que j'ai choisi de commencer avec une option gratuite pour l'hébergement. En effet, je n'ai pas encore payé pour un nom de domaine personnalisé (par exemple, un domaine qui se termine par .com). Cependant, Netlify est un hébergeur très fiable, rapide et facile à utiliser. Vous pouvez l'essayer vous-même grâce à 
+                <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" aria-label="Essayez Netlify.">
+                    <strong>ce lien</strong>
+                </a>.
             </p>
         </section>
     </div>
@@ -77,14 +96,14 @@
     <footer role="contentinfo">
         <p><strong>&copy; 2025 - Nathan</strong></p>
         <hr class="footer-separator">
-        <p>Retrouver le code du site sur
-            <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" rel="noopener noreferrer" aria-label="Retrouver le code du site sur GitHub.">GitHub</a>.
+        <p>Retrouvez le code du site sur
+            <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" rel="noopener noreferrer" aria-label="Voir le code source du site sur GitHub">GitHub</a>.
         </p>
         <hr class="footer-separator">
         <p>-_-</p>
     </footer>
 
-    <script src="js/défilement.js"></script>
+    <script src="js/défilement.js" defer></script>
 
 </body>
 </html>
