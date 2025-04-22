@@ -1,4 +1,4 @@
-/* Réinitialisation des styles par défaut */
+/* Réinitialisation des styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +6,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    /* Styles pour les petits écrans */
     body {
         font-size: 14px;
     }
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    background: linear-gradient(135deg, #f4f7f6, #ecf0f1);
     color: #2c3e50;
     line-height: 1.6;
     padding: 0;
@@ -26,6 +25,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Conteneur principal */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -36,37 +36,44 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* En-tête */
 header {
-    text-align: center;
-    margin-bottom: 40px;
+    margin: 40px 0;
+    padding: 25px;
+    background-color: #ecf0f1; /* Fond clair */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
+    text-align: center; /* Texte centré */
 }
 
 header h1 {
     font-size: 3rem;
-    color: #3498db;
+    color: #3498db; /* Couleur du titre */
     font-weight: 700;
 }
 
 header p {
     font-size: 1.3rem;
     color: #7f8c8d;
+    margin-top: 10px;
 }
 
-.bio, .interests {
+/* Sections */
+.bio, .interests, .my-websites, .projects, .why-netlify {
     margin: 40px 0;
     padding: 25px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: #ecf0f1; /* Fond clair */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
 }
 
-.bio h2, .interests h2 {
+.bio h2, .interests h2, .my-websites h2, .projects h2, .why-netlify h2 {
     font-size: 2rem;
     color: #34495e;
     margin-bottom: 20px;
 }
 
-.bio p, .interests ul {
+.bio p, .interests ul, .projects p, .why-netlify p {
     font-size: 1.2rem;
     color: #7f8c8d;
     margin-bottom: 20px;
@@ -89,26 +96,9 @@ ul li:hover {
     color: #fff;
 }
 
-/* Nouvelle section "Mes sites web" */
-.my-websites {
-    margin-top: 40px;
-    padding: 25px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.my-websites h2 {
-    font-size: 2rem;
-    color: #34495e;
-    margin-bottom: 20px;
-}
-
-.my-websites ul {
-    list-style: none;
-}
-
-.my-websites li {
+/* Liens des sites web */
+.my-websites li,
+.projects li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,91 +107,60 @@ ul li:hover {
     margin-bottom: 15px;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.my-websites li:hover {
+.my-websites li:hover,
+.projects li:hover {
     background-color: #3498db;
     color: #fff;
 }
 
-/* Liens dans "Mes sites web" - transformés en boutons */
-.my-websites a.site-link {
+a.site-link, a.project-link {
     display: inline-block;
-    background-color: #3498db; /* Couleur de fond bleu pour le bouton */
-    color: #fff; /* Texte blanc */
+    background-color: #3498db;
+    color: #fff;
     padding: 12px 20px;
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 6px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-right: 15px;
-    width: auto; /* Pas de largeur automatique, on laisse le lien s'adapter à son contenu */
     margin-bottom: 10px;
 }
 
-/* Changement de couleur du bouton (lien) au survol */
-.my-websites a.site-link:hover {
-    background-color: #2980b9; /* Fond du lien devient bleu foncé */
-    color: #fff; /* Texte du lien reste blanc */
-    transform: scale(1.00); /* Agrandissement du bouton moins prononcé */
+a.site-link:hover,
+a.project-link:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
-/* Description à côté du lien (pas de survol ici) */
-.my-websites .description {
+.description {
     font-size: 1rem;
-    color: #7f8c8d; /* Couleur grise pour la description */
-    width: 60%; /* Largeur de la description à côté du lien */
+    color: #7f8c8d;
+    width: 60%;
     padding-left: 20px;
     transition: color 0.3s ease-in-out;
 }
 
-.my-websites li:hover .description {
-    color: #fff; /* Description devient blanche au survol */
+li:hover .description {
+    color: #fff;
 }
 
-/* Pas d'effet d'agrandissement lorsque la souris est sur la description ou autour du lien */
-.my-websites li:hover .site-link {
-    background-color: #2980b9; /* Fond du lien devient bleu foncé */
-    color: #fff; /* Texte du lien devient blanc */
-    transform: scale(1.05); /* Agrandissement du lien moins prononcé */
-}
-
-.why-netlify {
-    margin-top: 40px;
-    padding: 25px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.why-netlify h2 {
-    font-size: 2rem;
-    color: #34495e;
-    margin-bottom: 20px;
-}
-
-.why-netlify p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    margin-bottom: 20px;
-}
-
-/* Lien Netlify - change la couleur pour qu'elle soit identique à celle du texte dans la section why-netlify */
+/* Lien Netlify */
 .why-netlify a {
-    color: #7f8c8d; /* Couleur du texte identique à celle du texte dans cette section */
+    color: #7f8c8d;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-/* Effet au survol du lien Netlify */
 .why-netlify a:hover {
-    color: #3498db; /* Lors du survol, la couleur devient bleue */
+    color: #3498db;
     text-decoration: underline;
 }
 
-/* Style du pied de page */
+/* Footer */
 footer {
     background: linear-gradient(135deg, #2980b9, #8e44ad);
     color: #fff;
@@ -227,11 +186,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer strong {
-    font-weight: bold;
-    color: #ecf0f1;
-}
-
 footer hr.footer-separator {
     border: none;
     border-top: 2px solid #ecf0f1;
@@ -239,124 +193,79 @@ footer hr.footer-separator {
     margin: 20px auto;
 }
 
-.navigation {
+/* === Page de chargement === */
+#loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
-    margin: 20px 0;
-    z-index: 1000;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f4f7f6, #ecf0f1);
 }
 
-.navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
 }
 
-.navigation ul li {
-    display: inline-block;
-    margin: 0 10px;
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-/* Style pour les liens du menu de navigation */
-.navigation ul li a {
-    display: inline-block;
-    background: linear-gradient(135deg, #3498db, #2ecc71);
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    border: none; /* Pas de bordure */
-    outline: none; /* Supprimer l'outline sur les liens du menu */
-    box-shadow: none; /* Pas de box-shadow */
-}
-
-/* Effet au survol des liens */
-.navigation ul li a:hover {
-    color: #fff;
-    background: linear-gradient(135deg, #2ecc71, #3498db);
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5); /* Ombre douce au survol */
-}
-
-/* Style quand le lien de navigation a le focus (lorsqu'il est sélectionné) */
-.navigation ul li a:focus {
-    outline: none; /* Pas de contour visible lorsqu'un lien de navigation a le focus */
-    box-shadow: none; /* Pas d'ombre */
-}
-
-/* Nouvelle section "Mes projets" */
-.projects {
-    margin-top: 40px;
-    padding: 25px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.projects h2 {
-    font-size: 2rem;
+#loading-text {
+    margin-top: 15px;
+    font-size: 1.3rem;
     color: #34495e;
-    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.projects p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    margin-bottom: 20px;
-}
-
-.projects ul {
-    list-style: none;
-}
-
-.projects li {
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease-in-out;
-}
-
-.projects li:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-
-/* Description dans la section "Mes projets" */
-.projects .description {
+.loading-description {
     font-size: 1rem;
-    color: #7f8c8d;
-    width: 60%;
-    padding-left: 20px;
+    color: #7f8c8d; /* Couleur du texte */
+    margin-top: 10px; /* Espacement entre le texte "chargement" et la nouvelle ligne */
+    text-align: center; /* Centrer le texte sous "Chargement..." */
 }
 
-.projects li:hover .description {
-    color: #fff;
+.progress-bar {
+    width: 90%;
+    max-width: 300px;
+    height: 10px;
+    background-color: #dcdfe1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-/* Liens dans "Mes projets" */
-.projects a.project-link {
-    display: inline-block;
+.progress-bar-fill {
+    width: 0%;
+    height: 100%;
     background-color: #3498db;
-    color: #fff;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    margin-right: 15px;
-    width: auto;
-    margin-bottom: 10px;
+    animation: fillBar 3s forwards;
 }
 
-/* Changement de couleur du lien au survol */
-.projects a.project-link:hover {
-    background-color: #2980b9;
-    color: #fff;
-    transform: scale(1.05);
+@keyframes fillBar {
+    to { width: 100%; }
+}
+
+#content {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlide 1s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
