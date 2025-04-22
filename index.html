@@ -18,92 +18,97 @@
 </head>
 <body>
 
-    <nav class="navigation">
-        <ul>
-            <li><a href="#bio" aria-label="En savoir plus sur moi">À propos</a></li>
-            <li><a href="#interests" aria-label="Mes centres d'intérêt">Centres d'intérêt</a></li>
-            <li><a href="#websites" aria-label="Mes sites web">Mes sites web</a></li>
-            <li><a href="#projects" aria-label="Mes projets">Mes projets</a></li>
-            <li><a href="#why-netlify" aria-label="Pourquoi netlify.app ?">Pourquoi Netlify ?</a></li>
-        </ul>
-    </nav>
+    <div id="loader-container">
+    <div id="loader"></div>
+    <div id="loading-text">
+        Chargement...
+    </div>
+    <div class="loading-description">
+        <strong>I hate</strong> Adam, Adriano, Elyes and <strong>Roman</strong>.
+    </div>
+    <!-- Ajouter la barre de chargement ici -->
+    <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+    </div>
+</div>
 
-    <header>
-        <h1>Nathan, le Petit Collégien - V2</h1>
-        <p>Bienvenue sur mon site personnel !</p>
-    </header>
+    <div id="content">
+        <header id="header">
+            <h1>Nathan, le Petit Collégien - V2</h1>
+            <p>Bienvenue sur mon site personnel !</p>
+        </header>
 
-    <div class="container">
-        <section id="bio" class="bio">
-            <h2>À propos de Nathan</h2>
-            <p>Je m'appelle <strong>Nathan</strong>, j'ai <strong>12 ans</strong> et je suis un collégien passionné par l'informatique et les jeux vidéo. J'aime apprendre et me perfectionner dans ces domaines. Toujours curieux, j'aime découvrir de nouvelles choses chaque jour !</p>
-        </section>
+        <div class="container">
+            <section id="bio" class="bio">
+                <h2>À propos de Nathan</h2>
+                <p>Je m'appelle <strong>Nathan</strong>, j'ai <strong>12 ans</strong> et je suis un collégien passionné par l'informatique et les jeux vidéo. J'aime apprendre et me perfectionner dans ces domaines. Toujours curieux, j'aime découvrir de nouvelles choses chaque jour !</p>
+            </section>
 
-        <section id="interests" class="interests">
-            <h2>Mes centres d'intérêt</h2>
-            <ul>
-                <li><strong>Informatique :</strong> J'adore programmer et créer des sites internet.</li>
-                <li><strong>Jeux vidéo :</strong> Les jeux de stratégie et d'aventure sont mes préférés !</li>
-            </ul>
-        </section>
+            <section id="interests" class="interests">
+                <h2>Mes centres d'intérêt</h2>
+                <ul>
+                    <li><strong>Informatique :</strong> J'adore programmer et créer des sites internet.</li>
+                    <li><strong>Jeux vidéo :</strong> Les jeux de stratégie et d'aventure sont mes préférés !</li>
+                </ul>
+            </section>
 
-        <section id="websites" class="my-websites">
-            <h2>Mes sites web</h2>
-            <ul>
-                <li>
-                    <a href="https://nathan-le-collegien.netlify.app" target="_blank" class="site-link" aria-label="Voir le site Nathan, le collégien V1">Nathan, le collégien V1</a>
-                    <span class="description">Un site que j'ai créé au début de mes 12 ans pour commencer à coder des sites Internet.</span>
-                </li>
-                <li>
-                    <a href="https://athenavaldoise-rapide.netlify.app" target="_blank" class="site-link" aria-label="Voir le site Athéna Rapidement">Athéna Rapidement</a>
-                    <span class="description">Un site que j'ai créé pour accéder à l'Athéna mon collège Val d'Oise rapidement.</span>
-                </li>
-                <li>
-                    <a href="https://la-chanson-alexi.netlify.app" target="_blank" class="site-link" aria-label="Voir le site La chanson d'Alexi">La chanson d'Alexi</a>
-                    <span class="description">Un site que j'ai créé pour un projet nommé ALEXA en compagnie de mes "amis".</span>
-                </li>
-                <li>
-                    <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="site-link" aria-label="Voir le site Nathan, le collégien V2">Nathan, le collégien V2</a>
-                    <span class="description">Ce site que j'ai créé pour une autre version du site nommé Nathan, le collégien.</span>
-                </li>
-            </ul>
-        </section>
+            <section id="websites" class="my-websites">
+                <h2>Mes sites web</h2>
+                <ul>
+                    <li>
+                        <a href="https://nathan-le-collegien.netlify.app" target="_blank" class="site-link">Nathan, le collégien V1</a>
+                        <span class="description">Un site que j'ai créé au début de mes 12 ans pour commencer à coder des sites Internet.</span>
+                    </li>
+                    <li>
+                        <a href="https://athenavaldoise-rapide.netlify.app" target="_blank" class="site-link">Athéna Rapidement</a>
+                        <span class="description">Un site que j'ai créé pour accéder à l'Athéna mon collège Val d'Oise rapidement.</span>
+                    </li>
+                    <li>
+                        <a href="https://la-chanson-alexi.netlify.app" target="_blank" class="site-link">La chanson d'Alexi</a>
+                        <span class="description">Un site que j'ai créé pour un projet nommé ALEXA en compagnie de mes "amis".</span>
+                    </li>
+                    <li>
+                        <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="site-link">Nathan, le collégien V2</a>
+                        <span class="description">Ce site que j'ai créé pour une autre version du site nommé Nathan, le collégien.</span>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="projects" class="projects">
-            <h2>Mes projets</h2>
-            <p>Voici quelques projets en cours :</p>
-            <ul>
-                <li>
-                    <strong>Site</strong> - Ce site Internet est un de mes projets en cours.
-                </li>
-                <li>
-                    <strong>Déstruction</strong> - Un projet <strong>privé</strong>.
-                </li>
-            </ul>
-        </section>
+            <section id="projects" class="projects">
+                <h2>Mes projets</h2>
+                <p>Voici quelques projets en cours :</p>
+                <ul>
+                    <li>
+                        <strong>Site</strong> - Ce site Internet est un de mes projets en cours.
+                    </li>
+                    <li>
+                        <strong>Déstruction</strong> - Un projet <strong>privé</strong>.
+                    </li>
+                </ul>
+            </section>
 
-        <section id="why-netlify" class="why-netlify">
-            <h2>Pourquoi "netlify.app" à la fin de mes liens ?</h2>
-            <p>
-                Lorsque vous voyez "netlify.app" à la fin des liens vers mes sites, c'est parce que j'ai choisi de commencer avec une option gratuite pour l'hébergement. En effet, je n'ai pas encore payé pour un nom de domaine personnalisé (par exemple, un domaine qui se termine par .com). Cependant, Netlify est un hébergeur très fiable, rapide et facile à utiliser. Vous pouvez l'essayer vous-même grâce à 
-                <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" aria-label="Essayez Netlify.">
-                    <strong>ce lien</strong>
-                </a>.
+            <section id="why-netlify" class="why-netlify">
+                <h2>Pourquoi "netlify.app" à la fin de mes liens ?</h2>
+                <p>
+                    Lorsque vous voyez "netlify.app" à la fin des liens vers mes sites, c'est parce que j'ai choisi de commencer avec une option gratuite pour l'hébergement. En effet, je n'ai pas encore payé pour un nom de domaine personnalisé (par exemple, un domaine qui se termine par .com). Cependant, Netlify est un hébergeur très fiable, rapide et facile à utiliser. Vous pouvez l'essayer vous-même grâce à 
+                    <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">ce lien</a>.
+                </p>
+            </section>
+        </div>
+
+        <footer role="contentinfo">
+            <p><strong>&copy; 2025 - Nathan</strong></p>
+            <hr class="footer-separator">
+            <p>Retrouvez le code du site sur
+                <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" rel="noopener noreferrer">GitHub</a>.
             </p>
-        </section>
+            <hr class="footer-separator">
+            <p><strong>Version</strong> : 2</p>
+        </footer>
     </div>
 
-    <footer role="contentinfo">
-        <p><strong>&copy; 2025 - Nathan</strong></p>
-        <hr class="footer-separator">
-        <p>Retrouvez le code du site sur
-            <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" rel="noopener noreferrer" aria-label="Voir le code source du site sur GitHub">GitHub</a>.
-        </p>
-        <hr class="footer-separator">
-        <p><strong>Version</strong> : 2</p>
-    </footer>
-
     <script src="js/défilement.js" defer></script>
+    <script src="js/load.js" defer></script>
 
 </body>
 </html>
