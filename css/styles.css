@@ -40,7 +40,7 @@ body {
 header {
     margin: 40px 0;
     padding: 25px;
-    background-color: #ecf0f1; /* Fond clair */
+    background-color: #fff; /* Fond clair */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
     text-align: center; /* Texte centré */
