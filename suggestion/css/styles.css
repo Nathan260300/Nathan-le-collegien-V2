@@ -1,0 +1,127 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f7f6, #ecf0f1);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 0;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* En-tête */
+h1 {
+    font-size: 3rem;
+    color: #3498db; /* Couleur du titre */
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Lien retour */
+.container a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.container a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+   .container a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+footer {
+    background: linear-gradient(135deg, #2980b9, #3498db); 
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 12px; /* Coins arrondis pour un look doux */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer hr.footer-separator {
+    border: none;
+    border-top: 2px solid #ecf0f1; /* Séparateur clair pour un bon contraste */
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* Animation douce pour le footer */
+footer {
+    opacity: 0;
+    animation: fadeInFooter 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInFooter {
+    to {
+        opacity: 1;
+    }
+}
