@@ -415,6 +415,14 @@ footer {
     border-color: #3498db;
 }
 
+.center-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Ajuste l'espace entre le bouton et le lien */
+    margin-top: 5px; /* Ajuste la position du bouton par rapport au textarea */
+}
+
 .suggestion button {
     background-color: #3498db;
     color: white;
@@ -424,4 +432,24 @@ footer {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.suggestion button:hover {
+    background-color: #2980b9;
+}
+
+.suggestion a {
+    background-color: #3498db;
+    color: white;
+    padding: 1px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.suggestion a:hover {
+    background-color: #2980b9;
 }
