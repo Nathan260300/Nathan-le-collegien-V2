@@ -50,24 +50,6 @@ p {
     margin-top: 10px;
 }
 
-/* Lien retour */
-a {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.3s ease-in-out;
-    margin-top: 20px;
-}
-
-a:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-}
-
 /* Responsive design */
 @media screen and (max-width: 768px) {
     h1 {
@@ -77,9 +59,3 @@ a:hover {
     p {
         font-size: 1.1rem;
     }
-
-    a {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-}
