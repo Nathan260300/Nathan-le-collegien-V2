@@ -36,6 +36,16 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.container2 {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* En-tête */
 header {
     margin: 40px 0;
@@ -67,10 +77,11 @@ header p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
 }
 
-.bio h2, .interests h2, .my-websites h2, .projects h2, .why-netlify h2 {
+.bio h2, .interests h2, .my-websites h2, .projects h2, .why-netlify h2, .suggestion h2 {
     font-size: 2rem;
     color: #34495e;
     margin-bottom: 20px;
+    text-align: center; /* Aligne les titres au centre */
 }
 
 .bio p, .interests ul, .projects p, .why-netlify p {
@@ -150,13 +161,13 @@ li:hover .description {
 /* === Section Projets === */
 .projects {
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #ecf0f1;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-card {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -225,12 +236,13 @@ li:hover .description {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    background: linear-gradient(135deg, #2980b9, #3498db); 
     color: #fff;
     padding: 30px 20px;
     text-align: center;
     margin-top: 50px;
-    border-radius: 10px;
+    border-radius: 12px; /* Coins arrondis pour un look doux */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
 }
 
 footer p {
@@ -243,17 +255,27 @@ footer a {
     color: #ecf0f1;
     text-decoration: none;
     font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 footer hr.footer-separator {
     border: none;
-    border-top: 2px solid #ecf0f1;
+    border-top: 2px solid #ecf0f1; /* Séparateur clair pour un bon contraste */
     width: 60%;
     margin: 20px auto;
+}
+
+/* Animation douce pour le footer */
+footer {
+    opacity: 0;
+    animation: fadeInFooter 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInFooter {
+    to {
+        opacity: 1;
+    }
 }
 
 /* === Page de chargement === */
@@ -331,4 +353,75 @@ footer hr.footer-separator {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* === Section Suggestion === */
+.suggestion {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.suggestion h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center; /* Aligne les titres au centre */
+}
+
+.suggestion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggestion form p {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.suggestion label {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.suggestion input,
+.suggestion textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.suggestion input:focus,
+.suggestion textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.suggestion button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
