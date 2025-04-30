@@ -24,9 +24,8 @@
         Chargement...
     </div>
     <div class="loading-description">
-        <strong>I hate</strong> Adam, Adriano, Elyes and <strong>Roman</strong>.
+        My <strong>name</strong> is <strong>Nathan</strong>.
     </div>
-    <!-- Ajouter la barre de chargement ici -->
     <div class="progress-bar">
         <div class="progress-bar-fill"></div>
     </div>
@@ -91,16 +90,6 @@
         <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="project-link">Voir la Version 2</a>
         <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" class="project-link">Voir le code de la V2</a>
     </div>
-
-    <div class="project-card">
-        <h3><strong>Destruction</strong></h3>
-        <p>
-            "<strong>Destruction</strong>" est un projet privé que j'ai commencé en avril. Je n'ai pas très envie d'en parler.</p>
-        <p>
-            <strong>Techniques utilisées :</strong> La parole, l'écrit
-        </p>
-        <span class="project-status">En cours</span>
-    </div>
 </section>
 
 
@@ -113,21 +102,27 @@
             </section>
         </div>
 
-            <form name="suggestion" method="POST" data-netlify="true" action="suggestion/merci">
-  <p>
-    <label for="name">Votre nom</label>
-    <input type="text" id="name" name="name" required>
-  </p>
-  <p>
-    <label for="email">Votre email (optionnel)</label>
-    <input type="email" id="email" name="email">
-  </p>
-  <p>
-    <label for="suggestion">Votre suggestion</label>
-    <textarea id="suggestion" name="suggestion" required></textarea>
-  </p>
-  <button type="submit">Envoyer votre suggestion</button>
-</form>
+        <div class="container2">
+           <section id="suggestion" class="suggestion">
+    <h2>Suggestion pour le site</h2>
+    <div class="formulaire">
+        <form name="suggestion" method="POST" data-netlify="true" action="suggestion/merci.html">
+            <p>
+                <label for="name">Votre nom</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email">Votre email (optionnel)</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="suggestion">Votre suggestion</label>
+                <textarea id="suggestion" name="suggestion" required></textarea>
+            </p>
+            <button type="submit">Envoyer votre suggestion</button>
+        </form>
+</section>
+</div>
 
         <footer role="contentinfo">
             <p><strong>&copy; 2025 - Nathan</strong></p>
