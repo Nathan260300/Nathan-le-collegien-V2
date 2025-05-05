@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal site of Nathan, a middle school student passionate about web development.">
+    <meta name="author" content="Nathan">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    <meta property="og:type" content="website">
+    <title>Nathan - The Middle Schooler - V2</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="loader-container">
+        <div id="loader"></div>
+        <div id="loading-text">
+            Loading...
+        </div>
+        <div class="loading-description">
+            My <strong>name</strong> is <strong>Nathan</strong>.
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+    </div>
+
+    <div id="content">
+        <header id="header">
+            <h1>Nathan, the Middle Schooler - V2</h1>
+            <p>Welcome to my personal website!</p>
+        </header>
+
+        <div class="container">
+            <section id="bio" class="bio">
+                <h2>About Nathan</h2>
+                <p>My name is <strong>Nathan</strong>, I'm <strong>12 years old</strong> and I'm a middle school student passionate about computers and video games. I love learning and improving in these areas. Always curious, I enjoy discovering new things every day!</p>
+            </section>
+
+            <section id="interests" class="interests">
+                <h2>My Interests</h2>
+                <ul>
+                    <li><strong>Computing:</strong> I love programming and creating websites.</li>
+                    <li><strong>Video games:</strong> Strategy and adventure games are my favorites!</li>
+                </ul>
+            </section>
+
+            <section id="websites" class="my-websites">
+                <h2>My Websites</h2>
+                <ul>
+                    <li>
+                        <a href="https://nathan-le-collegien.netlify.app" target="_blank" class="site-link">Nathan, the Middle Schooler V1</a>
+                        <span class="description">A website I created at the beginning of age 12 to start coding websites.</span>
+                    </li>
+                    <li>
+                        <a href="https://athenavaldoise-rapide.netlify.app" target="_blank" class="site-link">Athéna Quickly</a>
+                        <span class="description">A site I made to access Athéna, my school portal in Val d'Oise, more easily.</span>
+                    </li>
+                    <li>
+                        <a href="https://la-chanson-alexi.netlify.app" target="_blank" class="site-link">Alexi's Song</a>
+                        <span class="description">A site I made for a project named ALEXA with my “friends”.</span>
+                    </li>
+                    <li>
+                        <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="site-link">Nathan, the Middle Schooler V2</a>
+                        <span class="description">This site is a new version of the one called Nathan, the Middle Schooler.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>My Projects</h2>
+                <p>Here are some ongoing projects:</p>
+                
+                <div class="project-card">
+                    <h3><strong>Website</strong></h3>
+                    <p>
+                        This website is one of my current projects. It is built with HTML, CSS, and a bit of JavaScript to make it interactive. My goal is to create a personal space where I can share my projects, my passions, and my progress as a developer. This version is the second version of my site, with a more modern interface and better usability.
+                    </p>
+                    <p>
+                        <strong>Languages used:</strong> HTML, CSS, JavaScript
+                    </p>
+                    <a href="https://nathan-le-collegien.netlify.app" target="_blank" class="project-link">View Version 1</a>
+                    <a href="https://github.com/Nathan260300/Nathan-le-collegien-V1" target="_blank" class="project-link">View V1 Code</a>
+                    <a href="https://nathan-le-collegien-v2.netlify.app" target="_blank" class="project-link">View Version 2</a>
+                    <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" class="project-link">View V2 Code</a>
+                </div>
+            </section>
+
+            <section id="why-netlify" class="why-netlify">
+                <h2>Why "netlify.app" at the end of my links?</h2>
+                <p>
+                    When you see "netlify.app" at the end of the links to my websites, it's because I chose to start with a free hosting option. I haven’t paid for a custom domain name yet (like something ending in .com). However, Netlify is a very reliable, fast, and easy-to-use host. You can try it out yourself using 
+                    <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">this link</a>.
+                </p>
+            </section>
+        </div>
+
+        <div class="container2">
+            <section id="suggestion" class="suggestion">
+                <h2>Suggestion for the Site</h2>
+                <div class="formulaire">
+                    <form name="suggestion" method="POST" data-netlify="true" action="suggestion/tanks.html">
+                        <p>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </p>
+                        <p>
+                            <label for="email">Your email (optional)</label>
+                            <input type="email" id="email" name="email" autocomplete="email">
+                        </p>
+                        <p>
+                            <label for="suggestion">Your suggestion</label>
+                            <textarea id="suggestion" name="suggestion" maxlength="1000" required></textarea>
+                        </p>
+
+                        <div class="center-buttons">
+                            <button type="submit">Send your suggestion</button>
+                            <a href="help-suggestion/help-suggestion.html" target="_blank" rel="noopener noreferrer">Need help?</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer role="contentinfo">
+            <p><strong>&copy; 2025 - Nathan</strong></p>
+            <hr class="footer-separator">
+            <p>Find the code of the site on
+                <a href="https://github.com/Nathan260300/Nathan-le-collegien-V2" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            </p>
+            <hr class="footer-separator">
+            <p><strong>Version</strong>: 2</p>
+        </footer>
+    </div>
+
+    <script src="js/défilement.js" defer></script>
+    <script src="js/load.js" defer></script>
+
+</body>
+</html>
