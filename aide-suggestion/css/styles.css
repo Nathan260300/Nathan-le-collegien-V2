@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        zoom: 0.8; /* Fonctionne dans Chrome/Android */
+        -moz-transform: scale(0.8); /* Pour Firefox mobile */
+        -moz-transform-origin: top left;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
