@@ -1,0 +1,146 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        zoom: 0.8; /* Fonctionne dans Chrome/Android */
+        -moz-transform: scale(0.8); /* Pour Firefox mobile */
+        -moz-transform-origin: top left;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f7f6, #ecf0f1);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 0;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1 {
+    font-size: 2.5rem;
+    color: #3498db;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Sections d'information */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.section ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.section li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #2c3e50;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section li:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+footer {
+    background: linear-gradient(135deg, #2980b9, #3498db); 
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 12px; /* Coins arrondis pour un look doux */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer hr.footer-separator {
+    border: none;
+    border-top: 2px solid #ecf0f1; /* Séparateur clair pour un bon contraste */
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* Animation douce pour le footer */
+footer {
+    opacity: 0;
+    animation: fadeInFooter 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInFooter {
+    to {
+        opacity: 1;
+    }
+}
