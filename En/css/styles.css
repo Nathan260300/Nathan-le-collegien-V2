@@ -1,0 +1,462 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        zoom: 0.8; /* Fonctionne dans Chrome/Android */
+        -moz-transform: scale(0.8); /* Pour Firefox mobile */
+        -moz-transform-origin: top left;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 0;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+    
+    /* Dégradé animé */
+    background: linear-gradient(45deg, #f4f7f6, #ecf0f1, #3498db, #9b59b6);
+    background-size: 200% 200%;  /* Taille réduite */
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container2 {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête */
+header {
+    margin: 40px 0;
+    padding: 25px;
+    background-color: #fff; /* Fond clair */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
+    text-align: center; /* Texte centré */
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #3498db; /* Couleur du titre */
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Sections */
+.bio, .interests, .my-websites, .projects, .why-netlify {
+    margin: 40px 0;
+    padding: 25px;
+    background-color: #ecf0f1; /* Fond clair */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
+}
+
+.bio h2, .interests h2, .my-websites h2, .projects h2, .why-netlify h2, .suggestion h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center; /* Aligne les titres au centre */
+}
+
+.bio p, .interests ul, .projects p, .why-netlify p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Liens des sites web */
+.my-websites li,
+.projects li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.my-websites li:hover,
+.projects li:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+a.site-link, a.project-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+a.site-link:hover,
+a.project-link:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    width: 60%;
+    padding-left: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+li:hover .description {
+    color: #fff;
+}
+
+/* === Section Projets === */
+.projects {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #2980b9;
+}
+
+.project-status {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.project-status::before {
+    content: "📦 ";
+    font-size: 1.2rem;
+}
+
+/* Lien Netlify */
+.why-netlify a {
+    color: #7f8c8d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.why-netlify a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2980b9, #3498db); 
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 12px; /* Coins arrondis pour un look doux */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer hr.footer-separator {
+    border: none;
+    border-top: 2px solid #ecf0f1; /* Séparateur clair pour un bon contraste */
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* Animation douce pour le footer */
+footer {
+    opacity: 0;
+    animation: fadeInFooter 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInFooter {
+    to {
+        opacity: 1;
+    }
+}
+
+/* === Page de chargement === */
+#loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f4f7f6, #ecf0f1);
+}
+
+#loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading-text {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #34495e;
+    font-weight: bold;
+}
+
+.loading-description {
+    font-size: 1rem;
+    color: #7f8c8d; /* Couleur du texte */
+    margin-top: 10px; /* Espacement entre le texte "chargement" et la nouvelle ligne */
+    text-align: center; /* Centrer le texte sous "Chargement..." */
+}
+
+.progress-bar {
+    width: 90%;
+    max-width: 300px;
+    height: 10px;
+    background-color: #dcdfe1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #3498db;
+    animation: fillBar 3s forwards;
+}
+
+@keyframes fillBar {
+    to { width: 100%; }
+}
+
+#content {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlide 1s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Section Suggestion === */
+.suggestion {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.suggestion h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center; /* Aligne les titres au centre */
+}
+
+.suggestion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggestion form p {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.suggestion label {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.suggestion input,
+.suggestion textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.suggestion input:focus,
+.suggestion textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.center-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Ajuste l'espace entre le bouton et le lien */
+    margin-top: 5px; /* Ajuste la position du bouton par rapport au textarea */
+}
+
+.suggestion button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion button:hover {
+    background-color: #2980b9;
+}
+
+.suggestion a {
+    background-color: #3498db;
+    color: white;
+    padding: 1px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.suggestion a:hover {
+    background-color: #2980b9;
+}
