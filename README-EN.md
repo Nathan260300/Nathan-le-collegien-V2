@@ -27,21 +27,18 @@ You can explore the project here:
 
 ## 🧪 Features
 Responsive interface, optimized for mobile and tablet
-
 Smooth navigation between the different sections
-
 Structured and accessible educational content
 
 ## 🛠 Local Installation
 To test the project locally:
 
-Clone the repository:
-
+1. Clone the repository:
 ```bash
 git clone https://github.com/Nathan260300/Nathan-le-collegien-V2.git
 cd Nathan-le-collegien-V2
 ```
-Open the index.html file in your preferred browser.
+2. Open the index.html file in your preferred browser.
 
 ## 📄 License
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for more details.
