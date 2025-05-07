@@ -2,7 +2,7 @@
 
 Une version améliorée du site **Nathan le Collégien**, avec beaucoup d'améliorations tous les jours !
 
-## 🚀 Démo en ligne
+## 🚀 Site en ligne
 
 Tu peux découvrir le projet en ligne ici :  
 👉 [https://nathan-le-collegien-v2.netlify.app](https://nathan-le-collegien-v2.netlify.app)
