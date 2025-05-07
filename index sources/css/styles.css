@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
     
     /* Dégradé animé */
-    background: linear-gradient(45deg, #f4f7f6, #ecf0f1, #3498db, #9b59b6);
+    background: linear-gradient(45deg , #f4f7f6, #ecf0f1, #3498db, #9b59b6);
     background-size: 200% 200%;  /* Taille réduite */
     animation: gradientAnimation 10s ease infinite;
 }
@@ -58,6 +58,18 @@ header h1 {
     font-size: 3rem;
     color: #3498db; /* Couleur du titre */
     font-weight: 700;
+    animation: slideIn 0.5s ease forwards; /* Animation d'entrée */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 header p {
@@ -73,6 +85,18 @@ header p {
     background-color: #ecf0f1; /* Fond clair */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
+    animation: fadeIn 0.5s ease forwards; /* Animation d'entrée */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .choose-language h2 {
@@ -130,6 +154,7 @@ footer {
     margin-top: 50px;
     border-radius: 12px; /* Coins arrondis pour un look doux */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
+    animation: fadeInFooter 0.5s ease forwards; /* Animation d'entrée */
 }
 
 footer p {
@@ -153,15 +178,14 @@ footer hr.footer-separator {
 }
 
 /* Animation douce pour le footer */
-footer {
-    opacity: 0;
-    animation: fadeInFooter 1s forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes fadeInFooter {
+@keyframes fadeIn Footer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -176,6 +200,20 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     background: linear-gradient(135deg, #f4f7f6, #ecf0f1);
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #loader {
