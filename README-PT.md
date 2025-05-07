@@ -37,8 +37,6 @@ Para testar o projeto localmente:
 1. Clone o repositório:
 
 ```bash
-Copier
-Modifier
 git clone https://github.com/Nathan260300/Nathan-le-collegien-V2.git
 cd Nathan-le-collegien-V2
 ```
