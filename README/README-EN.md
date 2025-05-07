@@ -23,8 +23,8 @@ You can explore the project here:
 ├── En/                # Files for the English version
 ├── Pt/                # Files for the Portuguese version
 └── README.md          # Project documentation in french
-└── README-EN.md       # Project documentation in english
-└── README-PT.md       # Project documentation in portuguese
+└── README/            # Project documentation in french in english in portuguese
+└── LICENSE.md         # License
 ```
 
 ## 🧪 Features
