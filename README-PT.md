@@ -45,4 +45,4 @@ cd Nathan-le-collegien-V2
 2. Abra o arquivo index.html no seu navegador preferido.
 
 ## 📄 Licença
-Este projeto está licenciado sob a Licença MIT – consulte o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a Licença MIT – consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
