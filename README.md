@@ -1,4 +1,3 @@
-```markdown
 # Nathan le Collégien V2
 
 Une version améliorée du site **Nathan le Collégien**, dédiée à accompagner les collégiens dans leur parcours scolaire avec des ressources pédagogiques et une interface moderne.
@@ -17,8 +16,7 @@ Tu peux découvrir le projet en ligne ici :
 
 ## 📁 Structure du projet
 
-```
-.
+```markdown
 ├── index.html         # page d'accueil
 ├── index sources/            # img, js et css de index.html
 ├── Fr/               # fichiers de la version française
