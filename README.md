@@ -1,6 +1,6 @@
 # Nathan le Collégien V2
 
-Une version améliorée du site **Nathan le Collégien**, dédiée à accompagner les collégiens dans leur parcours scolaire avec des ressources pédagogiques et une interface moderne.
+Une version améliorée du site **Nathan le Collégien**, avec beaucoup d'améliorations tous les jours !
 
 ## 🚀 Démo en ligne
 
