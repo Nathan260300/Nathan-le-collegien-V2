@@ -22,13 +22,15 @@ You can explore the project here:
 ├── Fr/                # Files for the French version
 ├── En/                # Files for the English version
 ├── Pt/                # Files for the Portuguese version
-└── README.md          # Project documentation
+└── README.md          # Project documentation in french
+└── README-EN.md       # Project documentation in english
+└── README-PT.md       # Project documentation in portuguese
 ```
 
 ## 🧪 Features
-Responsive interface, optimized for mobile and tablet
-Smooth navigation between the different sections
-Structured and accessible educational content
+- Responsive interface, optimized for mobile and tablet
+- Smooth navigation between the different sections
+- Structured and accessible educational content
 
 ## 🛠 Local Installation
 To test the project locally:
