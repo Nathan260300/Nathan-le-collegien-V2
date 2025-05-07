@@ -23,8 +23,7 @@ Você pode explorar o projeto aqui:
 ├── En/                # Arquivos da versão em inglês
 ├── Pt/                # Arquivos da versão em português
 └── README.md          # Documentação do projeto em francês
-└── README-EN.md       # Documentação do projeto em inglês
-└── README-PT.md       # Documentação do projeto em português
+└── README/            # Documentação do projeto em francês em inglês em português
 ```
 ## 🧪 Funcionalidades
 - Interface responsiva, otimizada para dispositivos móveis e tablets
