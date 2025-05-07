@@ -17,12 +17,12 @@ Tu peux découvrir le projet en ligne ici :
 ## 📁 Structure du projet
 
 ```markdown
-├── index.html         # page d'accueil
-├── index sources/            # img, js et css de index.html
+├── index.html        # page d'accueil
+├── index sources/    # img, js et css de index.html
 ├── Fr/               # fichiers de la version française
 ├── En/               # fichiers de la version anglaise
 ├── Pt/               # fichiers de la version portugaise
-└── README.md          # documentation du projet
+└── README.md         # documentation du projet
 ```
 
 ## 🧪 Fonctionnalités
