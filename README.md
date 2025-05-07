@@ -1,10 +1,10 @@
 # Nathan le Collégien V2
 
-Une version améliorée du site **Nathan le Collégien**, avec beaucoup d'améliorations tous les jours !
+Une version améliorée du site **Nathan le Collégien**, avec de nouvelles améliorations ajoutées régulièrement !
 
 ## 🚀 Site en ligne
 
-Tu peux découvrir le projet en ligne ici :  
+Tu peux découvrir le projet ici :  
 👉 [https://nathan-le-collegien-v2.netlify.app](https://nathan-le-collegien-v2.netlify.app)
 
 ## 🔧 Technologies utilisées
@@ -17,12 +17,12 @@ Tu peux découvrir le projet en ligne ici :
 ## 📁 Structure du projet
 
 ```markdown
-├── index.html        # page d'accueil
-├── index sources/    # img, js et css de index.html
-├── Fr/               # fichiers de la version française
-├── En/               # fichiers de la version anglaise
-├── Pt/               # fichiers de la version portugaise
-└── README.md         # documentation du projet
+├── index.html         # Page d'accueil
+├── index sources/     # Images, scripts JS et CSS pour index.html
+├── Fr/                # Fichiers de la version française
+├── En/                # Fichiers de la version anglaise
+├── Pt/                # Fichiers de la version portugaise
+└── README.md          # Documentation du projet
 ```
 
 ## 🧪 Fonctionnalités
