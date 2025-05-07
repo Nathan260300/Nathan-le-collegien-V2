@@ -24,6 +24,7 @@ Você pode explorar o projeto aqui:
 ├── Pt/                # Arquivos da versão em português
 └── README.md          # Documentação do projeto em francês
 └── README/            # Documentação do projeto em francês em inglês em português
+└── LICENSE.md         # Licença
 ```
 ## 🧪 Funcionalidades
 - Interface responsiva, otimizada para dispositivos móveis e tablets
