@@ -22,8 +22,9 @@ Tu peux découvrir le projet ici :
 ├── Fr/                # Fichiers de la version française
 ├── En/                # Fichiers de la version anglaise
 ├── Pt/                # Fichiers de la version portugaise
-└── README/            # Documentation du projet en français en anglais et en portugais
+├── README.md          # Documentation du projet
 ├── LICENSE.md         # Lisence
+└── README/            # Documentation du projet en français en anglais et en portugais
 ```
 
 ## 🧪 Fonctionnalités
