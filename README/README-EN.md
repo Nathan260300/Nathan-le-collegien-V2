@@ -22,8 +22,8 @@ You can explore the project here:
 ├── Fr/                # Files for the French version
 ├── En/                # Files for the English version
 ├── Pt/                # Files for the Portuguese version
-└── README.md          # Project documentation in french
-└── README/            # Project documentation in french in english in portuguese
+├── README.md          # Project documentation in french
+├── README/            # Project documentation in french in english in portuguese
 └── LICENSE.md         # License
 ```
 
